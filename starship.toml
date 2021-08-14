@@ -12,9 +12,10 @@ error_symbol = "[❌](bold red) "
 disabled = true
 
 [git_branch]
-symbol = "🌱 "
+symbol = "🚀"
 truncation_length = 4
 truncation_symbol = ""
+format = '[\($symbol $branch\)]($style) '
 
 [git_commit]
 commit_hash_length = 4
@@ -25,16 +26,16 @@ format = '[\($state( $progress_current of $progress_total)\)]($style) '
 cherry_pick = "[🍒 PICKING](bold red)"
 
 [git_status]
-conflicted = "🏳"
-ahead = "🏎💨"
-behind = "😰"
-diverged = "😵"
-untracked = "🤷‍"
-stashed = "📦"
-modified = "📝"
-staged = '[++\($count\)](green)'
-renamed = "👅"
-deleted = "🗑"
+conflicted = "🏳-conflicted"
+ahead = "🏎💨-ahead"
+behind = "😰-behind"
+diverged = "😵-diverged"
+untracked = "🤷‍-untracked"
+stashed = "📦-stashed"
+modified = "📝-modified"
+staged = '[++\($count\) 👍-staged](green)'
+renamed = "👅-renamed"
+deleted = "🗑-deleted"
 
 [hostname]
 ssh_only = false
